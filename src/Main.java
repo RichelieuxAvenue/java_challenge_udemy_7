@@ -42,6 +42,10 @@ NOTE : La méthode isLeapYear doit être définie comme public static, comme nou
 NOTE : N’ajoutez pas de méthode main au code de la solution.
      */
     public static boolean isLeapYear(int year) {
+        //verifier si c'est dans le range de nombre valide a savoir entre 1 et 9999
+        if (year <1 || year > 9999) {
+            return false;
+        }
         //si divisible par 400 et bissextile
         if(year%400==0){
             return true;
